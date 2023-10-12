@@ -1,3 +1,5 @@
+# This file is to help you with testing model's accuracy, it uses matplotlib module to visualize output data
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
