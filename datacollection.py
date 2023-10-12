@@ -8,7 +8,7 @@ cap= cv2.VideoCapture(0)
 detector= HandDetector(maxHands=1)
 offset = 20
 imgsize=300
-folder = "Data/D"
+folder = "Data/D"     # change this every time you store different class of image
 counter=0
 
 while True:
