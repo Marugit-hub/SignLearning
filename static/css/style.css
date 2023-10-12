@@ -1,0 +1,114 @@
+
+
+.container-1 {
+    display: inline-flex;
+    align-content: stretch;
+    width: 100%;
+    max-height: 600px;
+    min-height: 300px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.hand-container-1  {
+    flex-basis: calc(50% - 20px);
+    display: flex;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #942929;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 500px;
+}
+
+.hand-container-1 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    opacity: 0; 
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+.hand-container-1 img.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    max-width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hand-container-1 img.image.active{
+    opacity: 1;
+    transform: translateX(0);
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.webcam-container-1{
+    flex-basis: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #942929;
+    box-sizing: border-box;
+    text-align: center;
+    width: auto;
+    max-width: 500px;
+}
+
+
+
+.webcam-container-1 .img{
+    max-height: 400px;
+
+}
+
+.message-container-1 {
+    flex-basis: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.buttons-container-1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+

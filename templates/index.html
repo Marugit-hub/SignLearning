@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/Exp_img/back_img.jpg') }}");
+            background-size: cover;
+            width: 100%;color: white;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="border-bottom: 2px;border-color: black;position: fixed;max-width:1500px;backdrop-filter: blur(50px);">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="30"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4" style="color: white;text-shadow: 1px 2px 9px rgba(0,0,255, 1.0);
+            font-weight: 700;">ONLINE SIGN LEARNING</span>
+          </a>
+    
+          <ul class="nav nav-pills" style="text-shadow: 0px 0px 15px rgb(225,225,225);display: flex;flex-wrap: wrap;justify-content: flex-end;text-align: end;">
+            <li><a href="{{ url_for('home')}}" class="nav-link " aria-current="page">Home</a></li>
+            <li><a href="{{ url_for('Explore') }}" class="nav-link">Explore</a></li>
+            <li><a href="{{ url_for('History') }}" class="nav-link">History</a></li>
+          </ul>
+        </header>
+        </div>
+<div class="container col-xxl-8 px-4" style="padding-top: 5rem!important;/*padding-bottom: 3rem!important; */">
+    <div class="row align-items-center g-5" style="padding-top: 3rem!important;">
+
+    <div class="container-1">
+        <div class="webcam-container-1">
+            <h2>Webcam Video</h2>
+            <img src="{{ url_for('video_feed')}}" width="100%" height="auto" />
+        </div>
+
+        <div class="hand-container-1 row align-items-center">
+            <h2>Hand Images</h2>
+                <img src="{{ url_for('static', filename='images/a.jpg') }}" class="image active" alt="Hand Image 1" />
+                <img src="{{ url_for('static', filename='images/b.jpg') }}" class="image" alt="Hand Image 2" />
+                <img src="{{ url_for('static', filename='images/c.jpg') }}" class="image" alt="Hand Image 3" />
+                <img src="{{ url_for('static', filename='images/d.jpg') }}" class="image" alt="Hand Image 4" />
+                <img src="{{ url_for('static', filename='images/e.jpg') }}" class="image" alt="Hand Image 5" />
+                <img src="{{ url_for('static', filename='images/f.jpg') }}" class="image" alt="Hand Image 6" />
+                <img src="{{ url_for('static', filename='images/g.jpg') }}" class="image" alt="Hand Image 7" />
+                <img src="{{ url_for('static', filename='images/h.jpg') }}" class="image" alt="Hand Image 8" />
+                <img src="{{ url_for('static', filename='images/i.jpg') }}" class="image" alt="Hand Image 9" />
+                <img src="{{ url_for('static', filename='images/j.jpg') }}" class="image" alt="Hand Image 10" />
+                <img src="{{ url_for('static', filename='images/k.jpg') }}" class="image" alt="Hand Image 11" />
+                <img src="{{ url_for('static', filename='images/l.jpg') }}" class="image" alt="Hand Image 12" />
+                <img src="{{ url_for('static', filename='images/m.jpg') }}" class="image" alt="Hand Image 13" />
+                <img src="{{ url_for('static', filename='images/n.jpg') }}" class="image" alt="Hand Image 14" />
+                <img src="{{ url_for('static', filename='images/o.jpg') }}" class="image" alt="Hand Image 15" />
+                <img src="{{ url_for('static', filename='images/p.jpg') }}" class="image" alt="Hand Image 16" />
+                <img src="{{ url_for('static', filename='images/q.jpg') }}" class="image" alt="Hand Image 17" />
+                <img src="{{ url_for('static', filename='images/r.jpg') }}" class="image" alt="Hand Image 18" />
+                <img src="{{ url_for('static', filename='images/s.jpg') }}" class="image" alt="Hand Image 19" />
+                <img src="{{ url_for('static', filename='images/t.jpg') }}" class="image" alt="Hand Image 20" />
+                <img src="{{ url_for('static', filename='images/u.jpg') }}" class="image" alt="Hand Image 21" />
+                <img src="{{ url_for('static', filename='images/v.jpg') }}" class="image" alt="Hand Image 22" />
+                <img src="{{ url_for('static', filename='images/w.jpg') }}" class="image" alt="Hand Image 23" />
+                <img src="{{ url_for('static', filename='images/x.jpg') }}" class="image" alt="Hand Image 24" />
+                <img src="{{ url_for('static', filename='images/y.jpg') }}" class="image" alt="Hand Image 25" />
+                <img src="{{ url_for('static', filename='images/z.jpg') }}" class="image" alt="Hand Image 26" />
+            </div>
+    </div>
+    
+    <div class="buttons-container-1">
+        <form action="{{ url_for('start_webcam') }}" method="GET">
+            <button id="startButton" class="btn btn-primary btn-lg px-4" type="submit">Start</button>
+        </form>
+        <button id="nextButton" class="btn btn-primary btn-lg px-4" style="margin-left: 1.5rem !important; ;" onclick="detectNextLabel()">Next</button>
+    </div>
+
+</body>
+</html>

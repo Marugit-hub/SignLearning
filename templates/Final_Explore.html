@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      body {
+        background-image: url("{{ url_for('static', filename='images/Exp_img/back_img.jpg') }}");
+          background-size: cover;
+          width: 100%;color: white;
+          /* Other styles */
+      }
+  </style>
+</head>
+<body>
+    <div class="container" style="border-bottom: 2px;border-color: black;position: fixed;max-width:1500px;backdrop-filter: blur(50px);">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="30"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4" style="color: white;text-shadow: 1px 2px 9px rgba(0,0,255, 1.0);
+            font-weight: 700;">ONLINE SIGN LEARNING</span>
+          </a>
+    
+          <ul class="nav nav-pills" style="text-shadow: 0px 0px 15px rgb(225,225,225);display: flex;flex-wrap: wrap;justify-content: flex-end;text-align: end;">
+            <li><a href="{{ url_for('home') }}" class="nav-link " aria-current="page">Home</a></li>
+            <li><a href="#" class="nav-link">Explore</a></li>
+            <li><a href="{{ url_for('History') }}" class="nav-link">History</a></li>
+            <!-- <li><a href="#" class="nav-link">FAQs</a></li>
+            <li><a href="#" class="nav-link">About</a></li> -->
+          </ul>
+        </header>
+        </div>
+
+        <div class="container col-xxl-8 px-4 g g-5 py-5" style="padding-top: 5rem!important;padding-bottom: 3rem!important;">
+            <h1 class=" align-items-center g-5 py-5 " style="text-align: center;justify-content: center;font-size: 24px;">Hello Explorer &#x1F44B;</h1>
+            <p style="font-size: 20px;">Let’s take a trip around the world to explore sign languages, their stories and their finger alphabets. The journey to communicating globally begins here!
+                Sign language is a visual means of communicating through hand signals, gestures, facial expssions, and body language.
+                It’s the main form of communication for the Deaf and Hard-of-Hearing community, but sign language can be useful for other groups of people as well. People with disabilities including Autism, Apraxia of speech, Cerebral Palsy, and Down Syndrome may also find sign language beneficial for communicating.
+                And as you will see in the different languages below, it has even had other uses throughout history.</p>
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Universal Language?</h1>
+            <p style="font-size: 20px;">There is no single sign language used around the world. Like spoken language, sign languages developed naturally through different groups of people interacting with each other, so there are many varieties. There are somewhere between 138 and 300 different types of sign language used around the globe today.
+                Interestingly, most countries that share the same spoken language do not necessarily have the same sign language as each other. English for example, has three varieties: American Sign Language (ASL), British Sign Language (BSL) and Australian Sign Language (Auslan).</p>
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Basics of Alphabets</h1>
+            <p style="font-size: 20px;">Most people start their sign language journey by learning the A-Z or alphabet equivalent in sign form.
+                The use of the hands to represent individual letters of a written alphabet is called ‘fingerspelling’. It’s an important tool that helps signers manually spell out names of people, places and things that don’t have an established sign.                    
+                For example, most sign languages have a specific sign for the word tree, but may not have a specific sign for oak, so o-a-k would be finger spelled to convey that specific meaning.
+                Of course, not every language uses the Latin alphabet like English, so their sign language alphabet differs as well. Some manual alphabets are one-handed, such as in ASL and French Sign Language, and others use two-hands, like BSL or Auslan. Though there are similarities between some of the different manual alphabets, each sign language has its own style and modifications, and remains unique.</p>
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Sign Language Alphabets Around the World</h1>
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">American Sign Language (ASL)</h1>
+            <p style="font-size: 20px;">Although ASL has the same alphabet as English, ASL is not a subset of the English language. American Sign Language was created independently and it has its own linguistic structure. (It is, in fact, descended from Old French Sign Language.)
+                Signs are also not expressed in the same order as words are in English. This is due to the unique grammar and visual nature of the sign language. ASL is used by roughly half a million people in the USA.</p>
+            <img src="static/images/Exp_img/ASL_Alphabet.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">British, Australian and New Zealand Sign Language (BANZSL)</h1>
+            <p style="font-size: 20px;">Sharing a sign language alphabet is British Sign Language, Australian Sign Language (Auslan) and New Zealand Sign Language. Unlike ASL, these alphabets use two hands, instead of one.</p>
+            <img src="static/images/Exp_img/BANZSL_Alphabet.jpg" style="margin-left: 25%; width: 55%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Chinese Sign Language (CSL)</h1>
+            <p style="font-size: 20px;">Probably the most-used sign language in the world (but there is currently no data to confirm this), Chinese Sign Language uses the hands to make visual representations of written Chinese characters. The language has been developing since the 1950s.</p>
+            <img src="static/images/Exp_img/gg.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">French Sign Language (LSF)</h1>
+            <p style="font-size: 20px;">French Sign Language is similar to ASL – since it is in fact the origin of ASL – but there are minor differences throughout. LSF also has a pretty fascinating history.</p>
+            <img src="static/images/Exp_img/French-sign-language.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Japanese Sign Language (JSL)</h1>
+            <p style="font-size: 20px;">The Japanese Sign Language (JSL) Syllabary is based on the Japanese alphabet, which is made up of phonetic syllables. JSL is known as Nihon Shuwa in Japan.
+            <img src="static/images/Exp_img/JSL-1.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Arabic Sign Language</h1>
+            <p style="font-size: 20px;">The Arab sign-language family is a family of sign languages across the Arab Mideast. Data on these languages is somewhat scarce, but a few languages have been distinguished, including Levantine Arabic Sign Language.</p>
+            <img src="static/images/Exp_img/Arabic_SL.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Spanish Sign Language (LSE)</h1>
+            <p style="font-size: 20px;">Spanish Sign Language is officially recognized by the Spanish Government. It is native to Spain, except Catalonia and Valencia. Many countries that speak Spanish do not use Spanish Sign Language! (See Mexican Sign Language below, for example.)</p>
+            <img src="static/images/Exp_img/Spanish_SL.jpg" style="margin-left: 25%; width: 55%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Mexican Sign Language (LSM)</h1>
+            <p style="font-size: 20px;">Mexican Sign Language (‘lengua de señas mexicana’ or LSM) is different from Spanish, using different verbs and word order. The majority of people who use Mexican Sign Language reside in Mexico City, Guadalajara and Monterrey. Variation in this language is high between age groups and religious backgrounds.</p>
+            <img src="static/images/Exp_img/Mexican_SL.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <h1 class=" align-items-center g-5 py-5 " style="justify-content: flex-start;font-size: 40px;">Ukrainian Sign Language (USL)</h1>
+            <p style="font-size: 20px;">Ukrainian Sign Language is derived from the broad family of French Sign Languages. It uses a one-handed manual alphabet of 33 signs, which make use of the 23 handshapes of USL.</p>
+            <img src="static/images/Exp_img/Ukrainian_SL.jpg" style="margin-left: 33%; width: 40%;" alt="American Hand Sign Alphabets">
+            <p style="margin-top: 120px;font-size: 20px;"><b><u>NOTE:</b></u> All the above Sign Languages are Currently in Use at Different Parts of the World, and There are many Indigenous Sign Talkings that exists without Recognition of its actual usage. Further more Sign Languages may come in Near Future.</p>
+        </div>
+
+
+        <div class="container">
+            <footer class="py-3 my-4" style="text-align: center;bottom:0 ;left: 0;width: 100%;">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Explore</a></li>
+                <li class="nav-item"><a href="{{ url_for('History') }}" class="nav-link px-2">History</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li> -->
+              </ul>
+              <p class="text-center">© 2023 Online Sign Learning, Inc</p>
+            </footer>
+          </div>
+</body>
+</html>
